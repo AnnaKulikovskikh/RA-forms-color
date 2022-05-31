@@ -12,6 +12,7 @@ export default function Converter () {
     const input =  /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(target.value)
     if (input === null) {
       setRGB('Error')
+      setColor('red')
       return
     }
 
